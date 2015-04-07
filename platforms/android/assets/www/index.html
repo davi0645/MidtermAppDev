@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<script src="cordova.js"></script>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Davidson App Framework</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type='application/javascript' src='Hammer.js'></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDV_E4PdhNjvkoQDK0Ai6bSVXIqodwFZdE&sensor=false"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+	<div id="navbar" class="clearfix">
+      <ul>
+        <li><img src="home.png" id="homepic"></li>
+        <li><img id="locationpic" src="location.png"></li>
+        <li><img id="contactspic" src="contacts.png"></li>
+      </ul>
+    </div>
+	<div id="pages">
+		<div id="home" class="active" data-role="page">
+        	<h1>Home Page</h1>
+            <p>This is the homepage of the greatest app EVAR!</p>
+        </div>
+        <div id="location" class="inactive" data-role="page">
+        	<h1>Your Location</h1>
+            <p>I'm a super spy, check out your location below!</p>
+            <div id="output" style="width:700px; height:500px;">
+            	
+            </div>
+        </div>
+        <div id="contacts" class="inactive" data-role="page">
+        	<h1>Contacts</h1>
+            <p>Here are some contacts:</p>
+            <div id="contactoutput">
+                <ul id="contactsList"></ul>
+            </div>
+        </div>
+	</div>	
+</body>
+</html>
